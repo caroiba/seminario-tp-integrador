@@ -1,0 +1,40 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - cache
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=330606
+      - DB_NAME=tareas
+      - REDIS_HOST=cache
+    networks:
+      - red-app
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 330606
+      MYSQL_DATABASE: tareas
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - red-app
+
+  cache:
+    image: redis:7
+    networks:
+      - red-app
+
+volumes:
+  db-data:
+
+
+networks:
+  red-app:
+    driver: bridge
