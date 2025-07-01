@@ -1,4 +1,3 @@
-
 # 🛍️ API Ecommerce de Productos (Node.js + Sequelize + MySQL + Redis)
 
 Este proyecto es una API RESTful simple pero útil, diseñada para la gestión de productos de un ecommerce. Usa una arquitectura de microservicios con **Docker Compose**, y se basa en:
@@ -44,7 +43,7 @@ Este proyecto es una API RESTful simple pero útil, diseñada para la gestión d
 1. **Clonar el repositorio**
 
 ```bash
-git clone https://github.com/usuario/api-ecommerce.git
+git clone https://github.com/caroiba/seminario-tp-integrador.git
 cd api-ecommerce
 ```
 
@@ -160,7 +159,6 @@ curl -X DELETE http://localhost:3000/productos/1
 Podés usar herramientas como **Postman** o **Thunder Client** para interactuar visualmente con la API.
 
 ---
-
 
 ## 👩‍💻 Autor
 
