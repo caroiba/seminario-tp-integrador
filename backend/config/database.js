@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
-const MAX_RETRIES = 5;
-const RETRY_DELAY_MS = 2000;
+const MAX_RETRIES = 10;
+const RETRY_DELAY_MS = 3000;
 
 let retries = 0;
 
