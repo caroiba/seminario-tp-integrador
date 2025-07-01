@@ -44,7 +44,6 @@ Este proyecto es una API RESTful simple pero útil, diseñada para la gestión d
 
 ```bash
 git clone https://github.com/caroiba/seminario-tp-integrador.git
-cd api-ecommerce
 ```
 
 2. **Crear archivo `.env`** en la raíz del proyecto con este contenido:
@@ -162,6 +161,6 @@ Podés usar herramientas como **Postman** o **Thunder Client** para interactuar 
 
 ## 👩‍💻 Autor
 
-Carolina Iba – Proyecto para Docker & Docker Compose
+Carolina Ibarrola – Proyecto para Docker & Docker Compose
 
 ---
