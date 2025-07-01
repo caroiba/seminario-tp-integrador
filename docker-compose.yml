@@ -10,7 +10,7 @@ services:
       - DB_HOST=db
       - DB_USER=root
       - DB_PASSWORD=330606
-      - DB_NAME=tareas
+      - DB_NAME=ecommerce
       - REDIS_HOST=cache
     networks:
       - red-app
@@ -19,7 +19,7 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: 330606
-      MYSQL_DATABASE: tareas
+      MYSQL_DATABASE: ecommerce
     volumes:
       - db-data:/var/lib/mysql
       - ./mysql-init:/docker-entrypoint-initdb.d
